@@ -1,0 +1,831 @@
+﻿Log file open, 03/22/17 12:50:30
+LogInit:Display: Running engine for game: FirePropagation
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-172139000) SRandInit(-172138999).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.094351
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.03.22-12.50.30:966][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.22-12.50.30:966][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.03.22-12.50.31:354][  0]LogInit: Computer: STU-CZC625C1N0
+[2017.03.22-12.50.31:354][  0]LogInit: User: ac2pitt
+[2017.03.22-12.50.31:354][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.03.22-12.50.31:354][  0]LogInit: High frequency timer resolution =3.328128 MHz
+[2017.03.22-12.50.31:354][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2017.03.22-12.50.31:354][  0]LogMemory: Platform Memory Stats for Windows
+[2017.03.22-12.50.31:354][  0]LogMemory: Process Physical Memory: 189.41 MB used, 189.41 MB peak
+[2017.03.22-12.50.31:354][  0]LogMemory: Process Virtual Memory: 196.14 MB used, 196.14 MB peak
+[2017.03.22-12.50.31:354][  0]LogMemory: Physical Memory: 5788.82 MB used, 32648.59 MB total
+[2017.03.22-12.50.31:354][  0]LogMemory: Virtual Memory: 549.84 MB used, 134217728.00 MB total
+[2017.03.22-12.50.31:388][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2017.03.22-12.50.31:701][  0]LogD3D11RHI: D3D11 adapters:
+[2017.03.22-12.50.31:730][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060 6GB' (Feature Level 11_0)
+[2017.03.22-12.50.31:730][  0]LogD3D11RHI:       5981/0/16324 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.03.22-12.50.31:738][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 530' (Feature Level 11_0)
+[2017.03.22-12.50.31:738][  0]LogD3D11RHI:       128/0/3840 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.03.22-12.50.31:739][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.03.22-12.50.31:739][  0]LogD3D11RHI:       0/0/256 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.03.22-12.50.31:739][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.03.22-12.50.31:742][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.03.22-12.50.31:742][  0]LogD3D11RHI:     GPU DeviceId: 0x1c03 (for the marketing name, search the web for "GPU Device Id")
+[2017.03.22-12.50.31:742][  0]LogWindows: EnumDisplayDevices:
+[2017.03.22-12.50.31:742][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1060 6GB' (P:1 D:1)
+[2017.03.22-12.50.31:742][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:1)
+[2017.03.22-12.50.31:743][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2017.03.22-12.50.31:743][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2017.03.22-12.50.31:743][  0]LogWindows:    4. 'Intel(R) HD Graphics 530' (P:0 D:0)
+[2017.03.22-12.50.31:743][  0]LogWindows:    5. 'Intel(R) HD Graphics 530' (P:0 D:0)
+[2017.03.22-12.50.31:743][  0]LogWindows:    6. 'Intel(R) HD Graphics 530' (P:0 D:0)
+[2017.03.22-12.50.31:743][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2017.03.22-12.50.31:743][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060 6GB
+[2017.03.22-12.50.31:743][  0]LogD3D11RHI:   Driver Version: 373.06 (internal:21.21.13.7306, unified:373.06)
+[2017.03.22-12.50.31:743][  0]LogD3D11RHI:      Driver Date: 10-1-2016
+[2017.03.22-12.50.31:743][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.03.22-12.50.31:755][  0]LogD3D11RHI: Async texture creation enabled
+[2017.03.22-12.50.31:771][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2017.03.22-12.50.31:771][  0]LogShaderCompilers: Guid format shader working directory is 11 characters bigger than the processId version (F:/AT/firePropagation2/FirePropagation/Intermediate/Shaders/WorkingDirectory/5548/).
+[2017.03.22-12.50.31:771][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/ac2-pitt/AppData/Local/Temp/UnrealShaderWorkingDir/952F26B84189D5BB7D5AA5AE655E2A09/'.
+[2017.03.22-12.50.31:771][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.03.22-12.50.32:295][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.03.22-12.50.32:305][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.03.22-12.50.32:315][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.03.22-12.50.32:325][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.03.22-12.50.32:334][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.03.22-12.50.32:343][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.03.22-12.50.32:351][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.03.22-12.50.32:359][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.03.22-12.50.32:366][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.03.22-12.50.32:373][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.03.22-12.50.32:381][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.03.22-12.50.32:396][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.03.22-12.50.32:396][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.03.22-12.50.32:397][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.03.22-12.50.32:418][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.03.22-12.50.32:424][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.03.22-12.50.32:432][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.03.22-12.50.32:445][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.03.22-12.50.32:453][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.03.22-12.50.32:453][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.03.22-12.50.32:513][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.03.22-12.50.32:552][  0]LogDerivedDataCache: Loaded boot cache 0.04s 62MB C:/Users/ac2-pitt/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2017.03.22-12.50.32:553][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/ac2-pitt/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2017.03.22-12.50.32:553][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file F:/AT/firePropagation2/FirePropagation/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.03.22-12.50.32:553][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.03.22-12.50.32:553][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file F:/AT/firePropagation2/FirePropagation/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.03.22-12.50.32:553][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.03.22-12.50.32:565][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.03.22-12.50.32:578][  0]LogDerivedDataCache: Using Local data cache path C:/Users/ac2-pitt/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.03.22-12.50.32:705][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.22-12.50.32:706][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.03.22-12.50.32:857][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2017.03.22-12.50.32:857][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.03.22-12.50.32:857][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2017.03.22-12.50.33:048][  0]LogAssetRegistry: FAssetRegistry took 0.0216 seconds to start up
+[2017.03.22-12.50.43:953][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 10.902707 seconds
+[2017.03.22-12.50.43:957][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2017.03.22-12.50.43:957][  0]LogUObjectAllocator: 5855624 out of 0 bytes used by permanent object pool.
+[2017.03.22-12.50.43:957][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.03.22-12.50.43:964][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.03.22-12.50.47:098][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.22-12.50.47:098][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.22-12.50.47:647][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.03.22-12.50.48:177][  0]SourceControl: Info Source control is disabled
+[2017.03.22-12.50.48:429][  0]SourceControl: Info Source control is disabled
+[2017.03.22-12.50.48:436][  0]SourceControl: Info Source control is disabled
+[2017.03.22-12.50.48:442][  0]SourceControl: Info Source control is disabled
+[2017.03.22-12.50.48:603][  0]LogEngine: Initializing Engine...
+[2017.03.22-12.50.48:604][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2017.03.22-12.50.48:604][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2017.03.22-12.50.48:705][  0]LogAIModule: Creating AISystem for world NewWorld
+[2017.03.22-12.50.48:707][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.22-12.50.48:725][  0]LogInit: FAudioDevice initialized.
+[2017.03.22-12.50.48:744][  0]LogDerivedDataCache: Saved boot cache 0.02s 48MB C:/Users/ac2-pitt/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2017.03.22-12.50.48:748][  0]LogInit: Texture streaming: Enabled
+[2017.03.22-12.50.48:770][  0]LogInit: Transaction tracking system initialized
+[2017.03.22-12.50.48:790][  0]BlueprintLog: New page: Editor Load
+[2017.03.22-12.50.48:873][  0]LocalizationService: Info Localization service is disabled
+[2017.03.22-12.50.48:925][  0]LogConsoleResponse:Display: 
+[2017.03.22-12.50.48:990][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2017.03.22-12.50.48:990][  0]LogCook:Display: Mobile HDR setting 1
+[2017.03.22-12.50.49:067][  0]SourceControl: Info Source control is disabled
+[2017.03.22-12.50.49:067][  0]Cmd: MAP LOAD FILE="F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Maps/FireForest.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.03.22-12.50.49:068][  0]LightingResults: New page: Lighting Build
+[2017.03.22-12.50.49:070][  0]MapCheck: New page: Map Check
+[2017.03.22-12.50.49:070][  0]LightingResults: New page: Lighting Build
+[2017.03.22-12.50.49:471][  0]LogAIModule: Creating AISystem for world FireForest
+[2017.03.22-12.50.49:478][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.03.22-12.50.49:479][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.03.22-12.50.49:525][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 46.041ms to complete.
+[2017.03.22-12.50.49:525][  0]LogFileHelpers: Loading map 'FireForest' took 0.458
+[2017.03.22-12.50.49:646][  0]LogCollectionManager: Loaded 0 collections in 0.002069 seconds
+[2017.03.22-12.50.49:691][  0]LogFileCache: Scanning file cache for directory 'F:/AT/firePropagation2/FirePropagation/Saved/Collections/' took 0.01s
+[2017.03.22-12.50.49:691][  0]LogFileCache: Scanning file cache for directory 'F:/AT/firePropagation2/FirePropagation/Content/Developers/ac2pitt/Collections/' took 0.01s
+[2017.03.22-12.50.49:691][  0]LogFileCache: Scanning file cache for directory 'F:/AT/firePropagation2/FirePropagation/Content/Collections/' took 0.01s
+[2017.03.22-12.50.49:691][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000004 seconds
+[2017.03.22-12.50.49:697][  0]LogContentBrowser: Native class hierarchy populated in 0.0067 seconds. Added 2047 classes and 369 folders.
+[2017.03.22-12.50.49:700][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.03.22-12.50.49:700][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.03.22-12.50.49:701][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0010 seconds. Added 12 classes and 0 folders.
+[2017.03.22-12.50.49:706][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0009 seconds. Added 0 classes and 0 folders.
+[2017.03.22-12.50.49:738][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0010 seconds. Added 0 classes and 0 folders.
+[2017.03.22-12.50.49:742][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0008 seconds. Added 1 classes and 2 folders.
+[2017.03.22-12.50.49:754][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.03.22-12.50.49:758][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.03.22-12.50.49:785][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2017.03.22-12.50.49:786][  0]LogLoad: Full Startup: 20.01 seconds (BP compile: 0.09 seconds)
+[2017.03.22-12.50.49:786][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.03.22-12.50.49:786][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.03.22-12.50.49:794][  0]LogOcInput: OculusInput pre-init called
+[2017.03.22-12.50.49:812][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.03.22-12.50.49:935][  0]LogRenderer: Reallocating scene render targets to support 1208x576 (Frame:2).
+[2017.03.22-12.50.50:005][  1]LogAssetRegistry: Asset discovery search completed in 16.9795 seconds
+[2017.03.22-12.50.50:005][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.03.22-12.50.50:005][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000040 seconds (updated 0 objects)
+[2017.03.22-12.51.02:896][353]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0015 seconds. Added 111 classes and 0 folders.
+[2017.03.22-12.51.15:887][775]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-12.51.15:887][775]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.22-12.51.15:888][775]PIE: New page: PIE session: FireForest (22 Mar 2017 12:51:15)
+[2017.03.22-12.51.15:888][775]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest
+[2017.03.22-12.51.15:891][775]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003163s)
+[2017.03.22-12.51.15:891][775]LogAIModule: Creating AISystem for world FireForest
+[2017.03.22-12.51.15:891][775]LogPlayLevel: PIE: World Init took: (0.000457s)
+[2017.03.22-12.51.15:892][775]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FireForest.FireForest to /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest (0.003859s)
+[2017.03.22-12.51.15:933][775]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.22-12.51.15:940][775]LogInit: FAudioDevice initialized.
+[2017.03.22-12.51.16:008][775]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2017.03.22-12.51.16:015][775]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest up for play (max tick rate 0) at 2017.03.22-12.51.16
+[2017.03.22-12.51.16:017][775]LogWorld: Bringing up level for play took: 0.006883
+[2017.03.22-12.51.16:021][775]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0006 seconds. Added 11 classes and 0 folders.
+[2017.03.22-12.51.16:024][775]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest 0.59
+[2017.03.22-12.51.16:024][775]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-12.51.19:444][180]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
+[2017.03.22-12.52.17:469][737]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPersonBP/Maps/FireForest" FILE="F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Maps/FireForest.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.03.22-12.52.25:451][737]LogSavePackage: Save=7833.76ms
+[2017.03.22-12.52.25:451][737]LogSavePackage: Moving 'F:/AT/firePropagation2/FirePropagation/Saved/FireForest5497E42845F8C79F90B943826BB6357D.tmp' to 'F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Maps/FireForest.umap'
+[2017.03.22-12.52.25:474][737]LogSavePackage:Display: Finished SavePackage F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Maps/FireForest.umap
+[2017.03.22-13.48.43:258][532]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.48.43:294][532]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.49.09:446][511]LogRenderer: Reallocating scene render targets to support 1208x900 (Frame:19949).
+[2017.03.22-13.49.49:401][162]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPersonBP/Blueprints/FirstPersonCharacter" FILE="F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset" SILENT=true
+[2017.03.22-13.49.56:439][162]LogSavePackage: Save=6884.78ms
+[2017.03.22-13.49.56:439][162]LogSavePackage: Moving 'F:/AT/firePropagation2/FirePropagation/Saved/FirstPersonCharacter646D7B99401D1984D45261B23346DEEB.tmp' to 'F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset'
+[2017.03.22-13.49.56:472][162]LogSavePackage:Display: Finished SavePackage F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset
+[2017.03.22-13.49.57:100][200]BlueprintLog: New page: Compile FirstPersonCharacter
+[2017.03.22-13.49.57:457][200]BlueprintEditorCompileResults: Info [3567.70] Compile of FirstPersonCharacter successful! [in 356 ms] (/Game/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter)
+[2017.03.22-13.49.58:952][299]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.49.58:952][299]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.22-13.49.58:952][299]PIE: New page: PIE session: FireForest (22 Mar 2017 13:49:58)
+[2017.03.22-13.49.58:952][299]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest
+[2017.03.22-13.49.58:955][299]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002351s)
+[2017.03.22-13.49.58:955][299]LogAIModule: Creating AISystem for world FireForest
+[2017.03.22-13.49.58:955][299]LogPlayLevel: PIE: World Init took: (0.000453s)
+[2017.03.22-13.49.58:955][299]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FireForest.FireForest to /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest (0.003048s)
+[2017.03.22-13.49.58:969][299]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.22-13.49.58:977][299]LogInit: FAudioDevice initialized.
+[2017.03.22-13.49.59:024][299]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2017.03.22-13.49.59:032][299]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest up for play (max tick rate 0) at 2017.03.22-13.49.59
+[2017.03.22-13.49.59:034][299]LogWorld: Bringing up level for play took: 0.007640
+[2017.03.22-13.49.59:038][299]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest -0.374
+[2017.03.22-13.49.59:038][299]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.50.04:341][926]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.50.04:592][926]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.50.13:950][996]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.50.13:950][996]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.22-13.50.13:950][996]PIE: New page: PIE session: FireForest (22 Mar 2017 13:50:13)
+[2017.03.22-13.50.13:950][996]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest
+[2017.03.22-13.50.13:952][996]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002359s)
+[2017.03.22-13.50.13:953][996]LogAIModule: Creating AISystem for world FireForest
+[2017.03.22-13.50.13:953][996]LogPlayLevel: PIE: World Init took: (0.000424s)
+[2017.03.22-13.50.13:953][996]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FireForest.FireForest to /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest (0.002979s)
+[2017.03.22-13.50.13:967][996]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.22-13.50.13:973][996]LogInit: FAudioDevice initialized.
+[2017.03.22-13.50.14:019][996]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2017.03.22-13.50.14:028][996]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest up for play (max tick rate 0) at 2017.03.22-13.50.14
+[2017.03.22-13.50.14:029][996]LogWorld: Bringing up level for play took: 0.007970
+[2017.03.22-13.50.14:033][996]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest 0.621
+[2017.03.22-13.50.14:033][996]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.50.51:220][748]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.50.51:256][748]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.51.43:226][241]BlueprintLog: New page: Compile FirstPersonCharacter
+[2017.03.22-13.51.43:559][241]BlueprintEditorCompileResults: Info [3673.81] Compile of FirstPersonCharacter successful! [in 332 ms] (/Game/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter)
+[2017.03.22-13.52.46:268][415]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_VariableGet_142.EdGraphPin_1576''
+[2017.03.22-13.52.56:030][560]BlueprintLog: New page: Compile FirstPersonCharacter
+[2017.03.22-13.52.56:143][560]BlueprintEditorCompileResults: Info [3746.39] Compile of FirstPersonCharacter successful! [in 113 ms] (/Game/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter)
+[2017.03.22-13.52.57:010][659]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPersonBP/Blueprints/FirstPersonCharacter" FILE="F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset" SILENT=true
+[2017.03.22-13.53.05:186][659]LogSavePackage: Save=8136.26ms
+[2017.03.22-13.53.05:188][659]LogSavePackage: Moving 'F:/AT/firePropagation2/FirePropagation/Saved/FirstPersonCharacter234F3F2E471B8A3387C58BB397D81A53.tmp' to 'F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset'
+[2017.03.22-13.53.05:224][659]LogSavePackage:Display: Finished SavePackage F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset
+[2017.03.22-13.53.08:216][975]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.53.08:216][975]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.22-13.53.08:216][975]PIE: New page: PIE session: FireForest (22 Mar 2017 13:53:08)
+[2017.03.22-13.53.08:216][975]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest
+[2017.03.22-13.53.08:219][975]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002485s)
+[2017.03.22-13.53.08:219][975]LogAIModule: Creating AISystem for world FireForest
+[2017.03.22-13.53.08:219][975]LogPlayLevel: PIE: World Init took: (0.000435s)
+[2017.03.22-13.53.08:219][975]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FireForest.FireForest to /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest (0.003117s)
+[2017.03.22-13.53.08:233][975]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.22-13.53.08:241][975]LogInit: FAudioDevice initialized.
+[2017.03.22-13.53.08:285][975]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2017.03.22-13.53.08:293][975]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest up for play (max tick rate 0) at 2017.03.22-13.53.08
+[2017.03.22-13.53.08:295][975]LogWorld: Bringing up level for play took: 0.007482
+[2017.03.22-13.53.08:299][975]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest 0.888
+[2017.03.22-13.53.08:299][975]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.53.13:662][570]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.53.13:710][570]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.54.43:890][663]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPersonBP/Blueprints/FirstPersonCharacter" FILE="F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset" SILENT=true
+[2017.03.22-13.54.51:756][663]LogSavePackage: Save=7820.54ms
+[2017.03.22-13.54.51:756][663]LogSavePackage: Moving 'F:/AT/firePropagation2/FirePropagation/Saved/FirstPersonCharacter6981C2254067F1F313F98AA7F4AB15C9.tmp' to 'F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset'
+[2017.03.22-13.54.51:792][663]LogSavePackage:Display: Finished SavePackage F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset
+[2017.03.22-13.54.52:669][738]BlueprintLog: New page: Compile FirstPersonCharacter
+[2017.03.22-13.54.52:781][738]BlueprintEditorCompileResults: Info [3863.03] Compile of FirstPersonCharacter successful! [in 111 ms] (/Game/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter)
+[2017.03.22-13.54.54:187][876]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.54.54:187][876]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.22-13.54.54:188][876]PIE: New page: PIE session: FireForest (22 Mar 2017 13:54:54)
+[2017.03.22-13.54.54:188][876]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest
+[2017.03.22-13.54.54:190][876]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002573s)
+[2017.03.22-13.54.54:191][876]LogAIModule: Creating AISystem for world FireForest
+[2017.03.22-13.54.54:191][876]LogPlayLevel: PIE: World Init took: (0.000559s)
+[2017.03.22-13.54.54:191][876]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FireForest.FireForest to /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest (0.003422s)
+[2017.03.22-13.54.54:205][876]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.22-13.54.54:213][876]LogInit: FAudioDevice initialized.
+[2017.03.22-13.54.54:256][876]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2017.03.22-13.54.54:263][876]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest up for play (max tick rate 0) at 2017.03.22-13.54.54
+[2017.03.22-13.54.54:265][876]LogWorld: Bringing up level for play took: 0.007002
+[2017.03.22-13.54.54:270][876]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest 0.859
+[2017.03.22-13.54.54:270][876]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.55.01:172][671]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.55.01:212][671]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.55.46:505][718]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_VariableGet_215.EdGraphPin_2116''
+[2017.03.22-13.55.55:838][818]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPersonBP/Blueprints/FirstPersonCharacter" FILE="F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset" SILENT=true
+[2017.03.22-13.56.04:635][818]LogSavePackage: Save=8283.10ms
+[2017.03.22-13.56.04:635][818]LogSavePackage: Moving 'F:/AT/firePropagation2/FirePropagation/Saved/FirstPersonCharacter590B9B9D403756EA248D57A7E690C34B.tmp' to 'F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset'
+[2017.03.22-13.56.04:672][818]LogSavePackage:Display: Finished SavePackage F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset
+[2017.03.22-13.56.05:184][859]BlueprintLog: New page: Compile FirstPersonCharacter
+[2017.03.22-13.56.05:298][859]BlueprintEditorCompileResults: Info [3935.55] Compile of FirstPersonCharacter successful! [in 113 ms] (/Game/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter)
+[2017.03.22-13.56.06:398][967]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.56.06:398][967]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.22-13.56.06:399][967]PIE: New page: PIE session: FireForest (22 Mar 2017 13:56:06)
+[2017.03.22-13.56.06:399][967]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest
+[2017.03.22-13.56.06:401][967]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002436s)
+[2017.03.22-13.56.06:401][967]LogAIModule: Creating AISystem for world FireForest
+[2017.03.22-13.56.06:402][967]LogPlayLevel: PIE: World Init took: (0.000507s)
+[2017.03.22-13.56.06:402][967]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FireForest.FireForest to /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest (0.003210s)
+[2017.03.22-13.56.06:416][967]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.22-13.56.06:424][967]LogInit: FAudioDevice initialized.
+[2017.03.22-13.56.06:467][967]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2017.03.22-13.56.06:474][967]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest up for play (max tick rate 0) at 2017.03.22-13.56.06
+[2017.03.22-13.56.06:476][967]LogWorld: Bringing up level for play took: 0.007299
+[2017.03.22-13.56.06:480][967]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest 1.07
+[2017.03.22-13.56.06:480][967]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.56.09:721][336]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.56.10:194][336]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-13.59.41:661][238]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_VariableGet_251.EdGraphPin_2385''
+[2017.03.22-13.59.59:799][390]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPersonBP/Blueprints/FirstPersonCharacter" FILE="F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset" SILENT=true
+[2017.03.22-14.00.08:446][390]LogSavePackage: Save=8601.59ms
+[2017.03.22-14.00.08:446][390]LogSavePackage: Moving 'F:/AT/firePropagation2/FirePropagation/Saved/FirstPersonCharacter69A9CD24488F47E2F483C18F9A8F6845.tmp' to 'F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset'
+[2017.03.22-14.00.08:483][390]LogSavePackage:Display: Finished SavePackage F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset
+[2017.03.22-14.00.09:425][473]BlueprintLog: New page: Compile FirstPersonCharacter
+[2017.03.22-14.00.09:542][473]BlueprintEditorCompileResults: Info [4179.79] Compile of FirstPersonCharacter successful! [in 117 ms] (/Game/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter)
+[2017.03.22-14.00.12:466][800]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.00.12:466][800]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.22-14.00.12:466][800]PIE: New page: PIE session: FireForest (22 Mar 2017 14:00:12)
+[2017.03.22-14.00.12:466][800]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest
+[2017.03.22-14.00.12:469][800]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002551s)
+[2017.03.22-14.00.12:469][800]LogAIModule: Creating AISystem for world FireForest
+[2017.03.22-14.00.12:469][800]LogPlayLevel: PIE: World Init took: (0.000557s)
+[2017.03.22-14.00.12:469][800]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FireForest.FireForest to /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest (0.003305s)
+[2017.03.22-14.00.12:485][800]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.22-14.00.12:495][800]LogInit: FAudioDevice initialized.
+[2017.03.22-14.00.12:540][800]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2017.03.22-14.00.12:548][800]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest up for play (max tick rate 0) at 2017.03.22-14.00.12
+[2017.03.22-14.00.12:549][800]LogWorld: Bringing up level for play took: 0.007242
+[2017.03.22-14.00.12:553][800]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest -0.856
+[2017.03.22-14.00.12:553][800]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.00.17:311][352]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.00.17:355][352]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.00.20:474][712]BlueprintLog: New page: Compile FirstPersonCharacter
+[2017.03.22-14.00.20:586][712]BlueprintEditorCompileResults: Info [4190.84] Compile of FirstPersonCharacter successful! [in 111 ms] (/Game/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter)
+[2017.03.22-14.00.21:704][837]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.00.21:704][837]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.22-14.00.21:704][837]PIE: New page: PIE session: FireForest (22 Mar 2017 14:00:21)
+[2017.03.22-14.00.21:704][837]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest
+[2017.03.22-14.00.21:707][837]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002458s)
+[2017.03.22-14.00.21:707][837]LogAIModule: Creating AISystem for world FireForest
+[2017.03.22-14.00.21:707][837]LogPlayLevel: PIE: World Init took: (0.000425s)
+[2017.03.22-14.00.21:707][837]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FireForest.FireForest to /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest (0.003101s)
+[2017.03.22-14.00.21:722][837]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.22-14.00.21:730][837]LogInit: FAudioDevice initialized.
+[2017.03.22-14.00.21:774][837]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2017.03.22-14.00.21:782][837]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest up for play (max tick rate 0) at 2017.03.22-14.00.21
+[2017.03.22-14.00.21:784][837]LogWorld: Bringing up level for play took: 0.007513
+[2017.03.22-14.00.21:789][837]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest 0.38
+[2017.03.22-14.00.21:789][837]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.00.47:652][768]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.00.47:694][768]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.01.31:586][772]LogEditorTransaction: Undo Edit Source Radius
+[2017.03.22-14.01.31:599][772]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_24.CharacterMesh0) Component already registered.
+[2017.03.22-14.01.31:600][772]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_716.CharMoveComp) Component already registered.
+[2017.03.22-14.01.31:601][772]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_24.CharMoveComp) Component already registered.
+[2017.03.22-14.01.31:602][772]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_24.Arrow) Component already registered.
+[2017.03.22-14.01.31:603][772]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_716.CharacterMesh0) Component already registered.
+[2017.03.22-14.01.31:604][772]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_716.Arrow) Component already registered.
+[2017.03.22-14.01.31:606][772]LogActorComponent: ~FComponentReregisterContext: (/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FirstPersonCharacter_352.CharacterMesh0) Component already registered.
+[2017.03.22-14.01.31:607][772]LogActorComponent: ~FComponentReregisterContext: (/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FirstPersonCharacter_352.CharMoveComp) Component already registered.
+[2017.03.22-14.01.31:610][772]LogActorComponent: ~FComponentReregisterContext: (/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FirstPersonCharacter_352.Arrow) Component already registered.
+[2017.03.22-14.01.49:827][882]BlueprintLog: New page: Compile FirstPersonCharacter
+[2017.03.22-14.01.49:975][882]BlueprintEditorCompileResults: Info [4280.23] Compile of FirstPersonCharacter successful! [in 147 ms] (/Game/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter)
+[2017.03.22-14.01.51:095][  3]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.01.51:096][  3]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.22-14.01.51:096][  3]PIE: New page: PIE session: FireForest (22 Mar 2017 14:01:51)
+[2017.03.22-14.01.51:096][  3]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest
+[2017.03.22-14.01.51:098][  3]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002426s)
+[2017.03.22-14.01.51:099][  3]LogAIModule: Creating AISystem for world FireForest
+[2017.03.22-14.01.51:099][  3]LogPlayLevel: PIE: World Init took: (0.000549s)
+[2017.03.22-14.01.51:099][  3]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FireForest.FireForest to /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest (0.003168s)
+[2017.03.22-14.01.51:114][  3]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.22-14.01.51:121][  3]LogInit: FAudioDevice initialized.
+[2017.03.22-14.01.51:164][  3]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2017.03.22-14.01.51:173][  3]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest up for play (max tick rate 0) at 2017.03.22-14.01.51
+[2017.03.22-14.01.51:174][  3]LogWorld: Bringing up level for play took: 0.007540
+[2017.03.22-14.01.51:178][  3]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest -0.23
+[2017.03.22-14.01.51:178][  3]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.01.59:799][ 20]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.01.59:834][ 20]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.02.02:436][310]Cmd: TRANSACTION UNDO
+[2017.03.22-14.02.02:436][310]LogEditorTransaction: Undo Edit Attenuation Radius
+[2017.03.22-14.02.02:443][310]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_24.CollisionCylinder) Component already registered.
+[2017.03.22-14.02.02:449][310]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_24.CharacterMesh0) Component already registered.
+[2017.03.22-14.02.02:450][310]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_716.CharacterMesh0) Component already registered.
+[2017.03.22-14.02.02:451][310]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_24.CharMoveComp) Component already registered.
+[2017.03.22-14.02.02:453][310]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_24.Arrow) Component already registered.
+[2017.03.22-14.02.02:454][310]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_716.CharMoveComp) Component already registered.
+[2017.03.22-14.02.02:455][310]LogActorComponent: ~FComponentReregisterContext: (/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FirstPersonCharacter_352.CharacterMesh0) Component already registered.
+[2017.03.22-14.02.02:457][310]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_716.Arrow) Component already registered.
+[2017.03.22-14.02.02:457][310]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_5:PersistentLevel.FirstPersonCharacter_C_675.CharacterMesh0) Component already registered.
+[2017.03.22-14.02.02:459][310]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_5:PersistentLevel.FirstPersonCharacter_C_675.CharMoveComp) Component already registered.
+[2017.03.22-14.02.02:460][310]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_5:PersistentLevel.FirstPersonCharacter_C_675.Arrow) Component already registered.
+[2017.03.22-14.02.02:888][342]Cmd: TRANSACTION UNDO
+[2017.03.22-14.02.02:888][342]LogEditorTransaction: Undo Edit Attenuation Radius
+[2017.03.22-14.02.02:914][342]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_24.CharacterMesh0) Component already registered.
+[2017.03.22-14.02.02:915][342]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_716.CharMoveComp) Component already registered.
+[2017.03.22-14.02.02:916][342]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_24.CharMoveComp) Component already registered.
+[2017.03.22-14.02.02:917][342]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_24.Arrow) Component already registered.
+[2017.03.22-14.02.02:918][342]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_716.CharacterMesh0) Component already registered.
+[2017.03.22-14.02.02:918][342]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_716.Arrow) Component already registered.
+[2017.03.22-14.02.02:920][342]LogActorComponent: ~FComponentReregisterContext: (/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FirstPersonCharacter_352.CharacterMesh0) Component already registered.
+[2017.03.22-14.02.02:921][342]LogActorComponent: ~FComponentReregisterContext: (/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FirstPersonCharacter_352.CharMoveComp) Component already registered.
+[2017.03.22-14.02.02:923][342]LogActorComponent: ~FComponentReregisterContext: (/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FirstPersonCharacter_352.Arrow) Component already registered.
+[2017.03.22-14.02.05:369][625]LogEditorTransaction: Undo Edit Source Length
+[2017.03.22-14.02.05:376][625]LogActorComponent: ~FComponentReregisterContext: (/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FirstPersonCharacter_352.CollisionCylinder) Component already registered.
+[2017.03.22-14.02.05:383][625]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_24.CharacterMesh0) Component already registered.
+[2017.03.22-14.02.05:385][625]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_24.CharMoveComp) Component already registered.
+[2017.03.22-14.02.05:387][625]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_24.Arrow) Component already registered.
+[2017.03.22-14.02.05:387][625]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_716.CharacterMesh0) Component already registered.
+[2017.03.22-14.02.05:388][625]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_716.CharMoveComp) Component already registered.
+[2017.03.22-14.02.05:389][625]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_5:PersistentLevel.FirstPersonCharacter_C_675.CharacterMesh0) Component already registered.
+[2017.03.22-14.02.05:390][625]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_716.Arrow) Component already registered.
+[2017.03.22-14.02.05:391][625]LogActorComponent: ~FComponentReregisterContext: (/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FirstPersonCharacter_352.CharacterMesh0) Component already registered.
+[2017.03.22-14.02.05:392][625]LogActorComponent: ~FComponentReregisterContext: (/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FirstPersonCharacter_352.CharMoveComp) Component already registered.
+[2017.03.22-14.02.05:393][625]LogActorComponent: ~FComponentReregisterContext: (/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FirstPersonCharacter_352.Arrow) Component already registered.
+[2017.03.22-14.02.07:797][904]LogEditorTransaction: Undo Edit Outer Cone Angle
+[2017.03.22-14.02.07:804][904]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_24.CollisionCylinder) Component already registered.
+[2017.03.22-14.02.07:810][904]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_24.CharacterMesh0) Component already registered.
+[2017.03.22-14.02.07:811][904]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_716.CharacterMesh0) Component already registered.
+[2017.03.22-14.02.07:812][904]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_24.CharMoveComp) Component already registered.
+[2017.03.22-14.02.07:814][904]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_24.Arrow) Component already registered.
+[2017.03.22-14.02.07:815][904]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_716.CharMoveComp) Component already registered.
+[2017.03.22-14.02.07:816][904]LogActorComponent: ~FComponentReregisterContext: (/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FirstPersonCharacter_352.CharacterMesh0) Component already registered.
+[2017.03.22-14.02.07:817][904]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_1:PersistentLevel.FirstPersonCharacter_C_716.Arrow) Component already registered.
+[2017.03.22-14.02.07:818][904]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_5:PersistentLevel.FirstPersonCharacter_C_675.CharacterMesh0) Component already registered.
+[2017.03.22-14.02.07:819][904]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_5:PersistentLevel.FirstPersonCharacter_C_675.CharMoveComp) Component already registered.
+[2017.03.22-14.02.07:820][904]LogActorComponent: ~FComponentReregisterContext: (/Engine/Transient.World_5:PersistentLevel.FirstPersonCharacter_C_675.Arrow) Component already registered.
+[2017.03.22-14.02.15:161][759]BlueprintLog: New page: Compile FirstPersonCharacter
+[2017.03.22-14.02.15:278][759]BlueprintEditorCompileResults: Info [4305.53] Compile of FirstPersonCharacter successful! [in 116 ms] (/Game/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter)
+[2017.03.22-14.02.16:224][861]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.02.16:224][861]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.22-14.02.16:224][861]PIE: New page: PIE session: FireForest (22 Mar 2017 14:02:16)
+[2017.03.22-14.02.16:224][861]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest
+[2017.03.22-14.02.16:227][861]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002428s)
+[2017.03.22-14.02.16:227][861]LogAIModule: Creating AISystem for world FireForest
+[2017.03.22-14.02.16:227][861]LogPlayLevel: PIE: World Init took: (0.000521s)
+[2017.03.22-14.02.16:227][861]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FireForest.FireForest to /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest (0.003175s)
+[2017.03.22-14.02.16:241][861]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.22-14.02.16:248][861]LogInit: FAudioDevice initialized.
+[2017.03.22-14.02.16:293][861]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2017.03.22-14.02.16:301][861]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest up for play (max tick rate 0) at 2017.03.22-14.02.16
+[2017.03.22-14.02.16:302][861]LogWorld: Bringing up level for play took: 0.007084
+[2017.03.22-14.02.16:307][861]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest 0.899
+[2017.03.22-14.02.16:307][861]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.02.50:115][445]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.02.50:148][445]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.03.18:967][395]LogSavePackage: Save=3241.83ms
+[2017.03.22-14.03.18:967][395]LogSavePackage: Moving 'F:/AT/firePropagation2/FirePropagation/Saved/FireForest_Auto1D63B3B554C379E9E261F91B9D6CCD915.tmp' to 'F:/AT/firePropagation2/FirePropagation/Saved/Autosaves/Game/FirstPersonBP/Maps/FireForest_Auto1.umap'
+[2017.03.22-14.03.19:101][395]LogSavePackage:Display: Finished SavePackage F:/AT/firePropagation2/FirePropagation/Saved/Autosaves/Game/FirstPersonBP/Maps/FireForest_Auto1.umap
+[2017.03.22-14.03.19:117][395]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/FireForest' took 3.938
+[2017.03.22-14.03.19:117][395]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 3.938
+[2017.03.22-14.03.19:444][395]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/FirstPersonBP/Blueprints/FirstPersonCharacter] ([1] browsable assets)...
+[2017.03.22-14.03.19:478][395]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter]
+[2017.03.22-14.03.19:478][395]OBJ SavePackage: Finished generating thumbnails for package [/Game/FirstPersonBP/Blueprints/FirstPersonCharacter]
+[2017.03.22-14.03.27:648][395]LogSavePackage: Save=8085.71ms
+[2017.03.22-14.03.27:648][395]LogSavePackage: Moving 'F:/AT/firePropagation2/FirePropagation/Saved/FirstPersonCharacter_Auto1E6A0B43042A110AB80D68796C0704D66.tmp' to 'F:/AT/firePropagation2/FirePropagation/Saved/Autosaves/Game/FirstPersonBP/Blueprints/FirstPersonCharacter_Auto1.uasset'
+[2017.03.22-14.03.27:657][395]LogSavePackage:Display: Finished SavePackage F:/AT/firePropagation2/FirePropagation/Saved/Autosaves/Game/FirstPersonBP/Blueprints/FirstPersonCharacter_Auto1.uasset
+[2017.03.22-14.03.27:657][395]LogFileHelpers: Auto-saving content packages took 8.540
+[2017.03.22-14.04.17:491][184]BlueprintLog: New page: Compile FirstPersonCharacter
+[2017.03.22-14.04.17:604][184]BlueprintEditorCompileResults: Info [4427.86] Compile of FirstPersonCharacter successful! [in 113 ms] (/Game/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter)
+[2017.03.22-14.04.18:479][277]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.04.18:479][277]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.22-14.04.18:479][277]PIE: New page: PIE session: FireForest (22 Mar 2017 14:04:18)
+[2017.03.22-14.04.18:479][277]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest
+[2017.03.22-14.04.18:481][277]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002408s)
+[2017.03.22-14.04.18:482][277]LogAIModule: Creating AISystem for world FireForest
+[2017.03.22-14.04.18:482][277]LogPlayLevel: PIE: World Init took: (0.000674s)
+[2017.03.22-14.04.18:482][277]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FireForest.FireForest to /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest (0.003231s)
+[2017.03.22-14.04.18:498][277]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.22-14.04.18:505][277]LogInit: FAudioDevice initialized.
+[2017.03.22-14.04.18:553][277]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2017.03.22-14.04.18:560][277]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest up for play (max tick rate 0) at 2017.03.22-14.04.18
+[2017.03.22-14.04.18:562][277]LogWorld: Bringing up level for play took: 0.007785
+[2017.03.22-14.04.18:566][277]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest -0.841
+[2017.03.22-14.04.18:566][277]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.04.24:303][952]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.04.24:339][952]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.05.02:064][ 61]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.05.02:064][ 61]BlueprintLog: New page: Pre-Play auto-recompile
+[2017.03.22-14.05.02:075][ 61]LogPlayLevel: [PlayLevel] Compiling FirstPersonCharacter before play...
+[2017.03.22-14.05.02:462][ 61]LogPlayLevel: PlayLevel: Blueprint regeneration took 397 ms (1 blueprints)
+[2017.03.22-14.05.02:479][ 61]PIE: New page: PIE session: FireForest (22 Mar 2017 14:05:02)
+[2017.03.22-14.05.02:479][ 61]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest
+[2017.03.22-14.05.02:481][ 61]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002384s)
+[2017.03.22-14.05.02:482][ 61]LogAIModule: Creating AISystem for world FireForest
+[2017.03.22-14.05.02:482][ 61]LogPlayLevel: PIE: World Init took: (0.000427s)
+[2017.03.22-14.05.02:482][ 61]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FireForest.FireForest to /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest (0.003071s)
+[2017.03.22-14.05.02:497][ 61]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.22-14.05.02:504][ 61]LogInit: FAudioDevice initialized.
+[2017.03.22-14.05.02:547][ 61]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2017.03.22-14.05.02:566][ 61]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest up for play (max tick rate 0) at 2017.03.22-14.05.02
+[2017.03.22-14.05.02:567][ 61]LogWorld: Bringing up level for play took: 0.007364
+[2017.03.22-14.05.02:571][ 61]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest 1.164
+[2017.03.22-14.05.02:571][ 61]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.05.26:500][893]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.05.26:548][893]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-14.05.32:439][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPersonBP/Blueprints/FirstPersonCharacter" FILE="F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset" SILENT=true
+[2017.03.22-14.05.39:934][426]LogSavePackage: Save=7437.64ms
+[2017.03.22-14.05.39:934][426]LogSavePackage: Moving 'F:/AT/firePropagation2/FirePropagation/Saved/FirstPersonCharacterC463866C4E38B6E8C2AFCE929B1E6D37.tmp' to 'F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset'
+[2017.03.22-14.05.39:979][426]LogSavePackage:Display: Finished SavePackage F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset
+[2017.03.22-14.05.43:529][784]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPersonBP/Maps/FireForest" FILE="F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Maps/FireForest.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.03.22-14.05.47:505][784]LogSavePackage: Save=3914.79ms
+[2017.03.22-14.05.47:505][784]LogSavePackage: Moving 'F:/AT/firePropagation2/FirePropagation/Saved/FireForestC9080C86471866BFD7B0F389C24F9246.tmp' to 'F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Maps/FireForest.umap'
+[2017.03.22-14.05.47:543][784]LogSavePackage:Display: Finished SavePackage F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Maps/FireForest.umap
+[2017.03.22-14.43.01:154][153]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/FireForest' took 0.032
+[2017.03.22-14.43.01:159][153]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/FirstPerson/Blueprints/FireManager] ([1] browsable assets)...
+[2017.03.22-14.43.01:159][153]OBJ SavePackage: Finished generating thumbnails for package [/Game/FirstPerson/Blueprints/FireManager]
+[2017.03.22-14.43.05:923][153]LogSavePackage: Save=4631.26ms
+[2017.03.22-14.43.05:923][153]LogSavePackage: Moving 'F:/AT/firePropagation2/FirePropagation/Saved/FireManager_Auto214845C854A073512171A75A2DD93ED48.tmp' to 'F:/AT/firePropagation2/FirePropagation/Saved/Autosaves/Game/FirstPerson/Blueprints/FireManager_Auto2.uasset'
+[2017.03.22-14.43.05:940][153]LogSavePackage:Display: Finished SavePackage F:/AT/firePropagation2/FirePropagation/Saved/Autosaves/Game/FirstPerson/Blueprints/FireManager_Auto2.uasset
+[2017.03.22-14.43.05:940][153]LogFileHelpers: Auto-saving content packages took 4.784
+[2017.03.22-14.50.44:691][278]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPerson/Blueprints/FireManager" FILE="F:/AT/firePropagation2/FirePropagation/Content/FirstPerson/Blueprints/FireManager.uasset" SILENT=true
+[2017.03.22-14.50.49:507][278]LogSavePackage: Save=4715.46ms
+[2017.03.22-14.50.49:507][278]LogSavePackage: Moving 'F:/AT/firePropagation2/FirePropagation/Saved/FireManagerF12EDF334045D6E60BFEF1B37EA8FDB3.tmp' to 'F:/AT/firePropagation2/FirePropagation/Content/FirstPerson/Blueprints/FireManager.uasset'
+[2017.03.22-14.50.49:584][278]LogSavePackage:Display: Finished SavePackage F:/AT/firePropagation2/FirePropagation/Content/FirstPerson/Blueprints/FireManager.uasset
+[2017.03.22-14.50.58:509][278]LogSavePackage: Save=8739.08ms
+[2017.03.22-14.50.58:509][278]LogSavePackage: Moving 'F:/AT/firePropagation2/FirePropagation/Saved/UEDPCFireForestFC6D829048EC49F01537FD8FCDE83C97.tmp' to 'F:/AT/firePropagation2/FirePropagation/Saved/Autosaves/Game/FirstPersonBP/Maps/UEDPCFireForest.umap'
+[2017.03.22-14.50.58:526][278]LogSavePackage:Display: Finished SavePackage F:/AT/firePropagation2/FirePropagation/Saved/Autosaves/Game/FirstPersonBP/Maps/UEDPCFireForest.umap
+[2017.03.22-14.50.58:548][278]LogEditorTransaction: Undo Spawn Play From Here Start
+[2017.03.22-14.52.17:272][280]MainFrameActions: Packaging (Windows (64-bit)): Running AutomationTool...
+[2017.03.22-14.52.17:372][285]MainFrameActions: Packaging (Windows (64-bit)): Program.Main: ERROR: AutomationTool terminated with exception: System.UnauthorizedAccessException: Access to the path 'C:\Program Files (x86)\Epic Games\4.12\Engine\Saved\UnrealBuildTool' is denied.
+[2017.03.22-14.52.17:372][285]MainFrameActions: Packaging (Windows (64-bit)):    at System.IO.__Error.WinIOError(Int32 errorCode, Stri
+[2017.03.22-14.52.17:372][285]MainFrameActions: Packaging (Windows (64-bit)): ng maybeFullPath)
+[2017.03.22-14.52.17:372][285]MainFrameActions: Packaging (Windows (64-bit)):    at System.IO.Directory.InternalCreateDirectory(String fullPath, String path, Object dirSecurityObj, Boolean checkHost)
+[2017.03.22-14.52.17:372][285]MainFrameActions: Packaging (Windows (64-bit)):    at System.IO.Directory.InternalCreateDirectoryHelper(String path, Boolean checkHost)
+[2017.03.22-14.52.17:372][285]MainFrameActions: Packaging (Windows (64-bit)):    at UnrealBuildTool.XmlConfigLoader.OverwriteIfDifferent(String FilePath, String Content, Boolean bReadOnlyFile)
+[2017.03.22-14.52.17:372][285]MainFrameActions: Packaging (Windows (64-bit)):    at UnrealBuildTool.XmlConfigLoader.Init()
+[2017.03.22-14.52.17:372][285]MainFrameActions: Packaging (Windows (64-bit)):    at AutomationTool.Program.Main()
+[2017.03.22-14.52.17:381][286]MainFrameActions: Packaging (Windows (64-bit)): Program.NoThrow: ERROR: Exception performing nothrow action "Kill All Processes": Exception in AutomationUtils.Automation: Trying to access IsBuildMachine property before it was initialized.
+[2017.03.22-14.52.17:381][286]MainFrameActions: Packaging (Windows (64-bit)): Stacktrace:    at AutomationTool.Automation.get_IsBuildMachine()
+[2017.03.22-14.52.17:381][286]MainFrameActions: Packaging (Windows (64-bit)):    at AutomationTool.ProcessManager.KillAll()
+[2017.03.22-14.52.17:381][286]MainFrameActions: Packaging (Windows (64-bit)):    at AutomationTool.Program.<>c.<Main>b__0_1()
+[2017.03.22-14.52.17:381][286]MainFrameActions: Packaging (Windows (64-bit)):    at AutomationTool.Program.NoThrow(Action Action, String ActionDesc)
+[2017.03.22-14.52.17:381][286]MainFrameActions: Packaging (Windows (64-bit)): Program.Main: AutomationTool exiting with ExitCode=1 (Error_Unknown)
+[2017.03.22-14.52.17:391][287]MainFrameActions: Packaging (Windows (64-bit)): copying UAT log files...
+[2017.03.22-14.52.17:391][287]MainFrameActions: Packaging (Windows (64-bit)): BUILD FAILED
+[2017.03.22-14.52.17:391][287]PackagingResults:Error: Error Unknown Error
+[2017.03.22-14.52.29:417][714]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPersonBP/Maps/FireForest" FILE="F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Maps/FireForest.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.03.22-14.52.34:660][714]LogSavePackage: Save=5009.23ms
+[2017.03.22-14.52.34:661][714]LogSavePackage: Moving 'F:/AT/firePropagation2/FirePropagation/Saved/FireForest2C5100FB40B2367937609AA42518D3CD.tmp' to 'F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Maps/FireForest.umap'
+[2017.03.22-14.52.34:680][714]LogSavePackage:Display: Finished SavePackage F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Maps/FireForest.umap
+[2017.03.22-14.52.49:595][394]BlueprintLog: New page: Compile FireManager
+[2017.03.22-14.52.49:708][394]BlueprintEditorCompileResults: Info [7339.98] Compile of FireManager successful! [in 112 ms] (/Game/FirstPerson/Blueprints/FireManager.FireManager)
+[2017.03.22-14.52.52:483][619]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPerson/Blueprints/FireManager" FILE="F:/AT/firePropagation2/FirePropagation/Content/FirstPerson/Blueprints/FireManager.uasset" SILENT=true
+[2017.03.22-14.52.57:793][619]LogSavePackage: Save=5261.03ms
+[2017.03.22-14.52.57:793][619]LogSavePackage: Moving 'F:/AT/firePropagation2/FirePropagation/Saved/FireManager6EEEFD114A093F3DD2D42D8F865267F5.tmp' to 'F:/AT/firePropagation2/FirePropagation/Content/FirstPerson/Blueprints/FireManager.uasset'
+[2017.03.22-14.52.57:826][619]LogSavePackage:Display: Finished SavePackage F:/AT/firePropagation2/FirePropagation/Content/FirstPerson/Blueprints/FireManager.uasset
+[2017.03.22-20.24.01:273][376]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-20.24.01:273][376]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.22-20.24.01:273][376]PIE: New page: PIE session: FireForest (22 Mar 2017 20:24:01)
+[2017.03.22-20.24.01:273][376]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest
+[2017.03.22-20.24.01:277][376]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003884s)
+[2017.03.22-20.24.01:277][376]LogAIModule: Creating AISystem for world FireForest
+[2017.03.22-20.24.01:278][376]LogPlayLevel: PIE: World Init took: (0.000611s)
+[2017.03.22-20.24.01:278][376]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FireForest.FireForest to /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest (0.004734s)
+[2017.03.22-20.24.01:294][376]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.22-20.24.01:300][376]LogInit: FAudioDevice initialized.
+[2017.03.22-20.24.01:349][376]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2017.03.22-20.24.01:357][376]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest up for play (max tick rate 0) at 2017.03.22-20.24.01
+[2017.03.22-20.24.01:358][376]LogWorld: Bringing up level for play took: 0.007849
+[2017.03.22-20.24.01:363][376]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest -0.129
+[2017.03.22-20.24.01:363][376]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-20.24.15:768][339]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-20.24.15:814][339]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-21.04.35:267][181]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-21.04.35:267][181]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.22-21.04.35:267][181]PIE: New page: PIE session: FireForest (22 Mar 2017 21:04:35)
+[2017.03.22-21.04.35:267][181]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest
+[2017.03.22-21.04.35:270][181]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003063s)
+[2017.03.22-21.04.35:271][181]LogAIModule: Creating AISystem for world FireForest
+[2017.03.22-21.04.35:271][181]LogPlayLevel: PIE: World Init took: (0.000605s)
+[2017.03.22-21.04.35:271][181]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FireForest.FireForest to /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest (0.003894s)
+[2017.03.22-21.04.35:288][181]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.22-21.04.35:293][181]LogInit: FAudioDevice initialized.
+[2017.03.22-21.04.35:342][181]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2017.03.22-21.04.35:350][181]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest.FireForest up for play (max tick rate 0) at 2017.03.22-21.04.35
+[2017.03.22-21.04.35:351][181]LogWorld: Bringing up level for play took: 0.007358
+[2017.03.22-21.04.35:355][181]PIE: Info Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FireForest -0.121
+[2017.03.22-21.04.35:356][181]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-21.05.28:307][300]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-21.05.28:338][300]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest' with GeneratedClass '/Game/FirstPersonBP/Maps/FireForest.FireForest_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FireForest.FireForest:PersistentLevel.FireForest'
+[2017.03.22-23.30.00:400][878]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPersonBP/Maps/FireForest" FILE="F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Maps/FireForest.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.03.22-23.30.02:810][878]LogSavePackage: Save=2271.27ms
+[2017.03.22-23.30.02:811][878]LogSavePackage: Moving 'F:/AT/firePropagation2/FirePropagation/Saved/FireForestAC73E8504D1A9A33421F34B96059F5F8.tmp' to 'F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Maps/FireForest.umap'
+[2017.03.22-23.30.02:832][878]LogSavePackage:Display: Finished SavePackage F:/AT/firePropagation2/FirePropagation/Content/FirstPersonBP/Maps/FireForest.umap
+[2017.03.22-23.30.03:850][982]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPerson/Blueprints/FireManager" FILE="F:/AT/firePropagation2/FirePropagation/Content/FirstPerson/Blueprints/FireManager.uasset" SILENT=true
+[2017.03.22-23.30.07:812][982]LogSavePackage: Save=3893.73ms
+[2017.03.22-23.30.07:812][982]LogSavePackage: Moving 'F:/AT/firePropagation2/FirePropagation/Saved/FireManager368BA1964600BD6267E4F4898248CEEF.tmp' to 'F:/AT/firePropagation2/FirePropagation/Content/FirstPerson/Blueprints/FireManager.uasset'
+[2017.03.22-23.30.11:213][982]LogSavePackage:Display: Finished SavePackage F:/AT/firePropagation2/FirePropagation/Content/FirstPerson/Blueprints/FireManager.uasset
+[2017.03.22-23.30.14:622][381]BlueprintLog: New page: Compile FireManager
+[2017.03.22-23.30.14:719][381]BlueprintEditorCompileResults: Info [8384.96] Compile of FireManager successful! [in 97 ms] (/Game/FirstPerson/Blueprints/FireManager.FireManager)
+[2017.03.22-23.30.15:924][521]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.03.22-23.30.19:122][874]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.03.22-23.30.19:314][875]Cmd: QUIT_EDITOR
+[2017.03.22-23.30.19:458][875]LogExit: Preparing to exit.
+[2017.03.22-23.30.20:313][875]LogExit: Editor shut down
+[2017.03.22-23.30.20:314][875]LogExit: Transaction tracking system shut down
+[2017.03.22-23.30.20:431][875]LogObj: Freed 0b from 0 cluster array pools.
+[2017.03.22-23.30.20:431][875]LogExit: Object subsystem successfully closed.
+[2017.03.22-23.30.20:443][875]LogD3D11RHI: Shutdown
+[2017.03.22-23.30.20:443][875]LogD3D11RHI: CleanupD3DDevice
+[2017.03.22-23.30.20:516][875]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.03.22-23.30.20:525][875]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (215)
+[2017.03.22-23.30.20:525][875]LogModuleManager: Shutting down and abandoning module BlueprintGraph (214)
+[2017.03.22-23.30.20:526][875]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (213)
+[2017.03.22-23.30.20:526][875]LogModuleManager: Shutting down and abandoning module CrashTracker (212)
+[2017.03.22-23.30.20:526][875]LogModuleManager: Shutting down and abandoning module SceneOutliner (211)
+[2017.03.22-23.30.20:526][875]LogModuleManager: Shutting down and abandoning module WidgetCarousel (210)
+[2017.03.22-23.30.20:526][875]LogModuleManager: Shutting down and abandoning module AddContentDialog (209)
+[2017.03.22-23.30.20:526][875]LogModuleManager: Shutting down and abandoning module GameplayTags (208)
+[2017.03.22-23.30.20:526][875]LogModuleManager: Shutting down and abandoning module EditorWidgets (207)
+[2017.03.22-23.30.20:526][875]LogModuleManager: Shutting down and abandoning module CollectionManager (206)
+[2017.03.22-23.30.20:526][875]LogModuleManager: Shutting down and abandoning module StatsViewer (205)
+[2017.03.22-23.30.20:526][875]LogModuleManager: Shutting down and abandoning module FoliageEdit (204)
+[2017.03.22-23.30.20:526][875]LogModuleManager: Shutting down and abandoning module LandscapeEditor (203)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (202)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module ActorPickerMode (201)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module GeometryMode (200)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module TextureAlignMode (199)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module BspMode (198)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module HardwareSurvey (197)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (196)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module SequenceRecorder (195)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module AutomationWorker (194)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (193)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module PlacementMode (192)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (191)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module CharacterAI (190)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module SmartSnapping (189)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module SessionServices (188)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module ViewportSnapping (187)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module LogVisualizer (186)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (185)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module IntroTutorials (184)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (183)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (182)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (181)
+[2017.03.22-23.30.20:527][875]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (180)
+[2017.03.22-23.30.21:256][875]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (179)
+[2017.03.22-23.30.21:256][875]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (178)
+[2017.03.22-23.30.21:256][875]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (177)
+[2017.03.22-23.30.21:256][875]LogModuleManager: Shutting down and abandoning module MergeActors (176)
+[2017.03.22-23.30.21:256][875]LogModuleManager: Shutting down and abandoning module SizeMap (175)
+[2017.03.22-23.30.21:256][875]LogModuleManager: Shutting down and abandoning module TreeMap (174)
+[2017.03.22-23.30.21:256][875]LogModuleManager: Shutting down and abandoning module ReferenceViewer (173)
+[2017.03.22-23.30.21:256][875]LogModuleManager: Shutting down and abandoning module LocalizationService (172)
+[2017.03.22-23.30.21:256][875]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (171)
+[2017.03.22-23.30.21:256][875]LogModuleManager: Shutting down and abandoning module HardwareTargeting (170)
+[2017.03.22-23.30.21:256][875]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (169)
+[2017.03.22-23.30.21:257][875]LogModuleManager: Shutting down and abandoning module UndoHistory (168)
+[2017.03.22-23.30.21:257][875]LogModuleManager: Shutting down and abandoning module UserFeedback (167)
+[2017.03.22-23.30.21:257][875]LogModuleManager: Shutting down and abandoning module XmlParser (166)
+[2017.03.22-23.30.21:257][875]LogModuleManager: Shutting down and abandoning module Blutility (165)
+[2017.03.22-23.30.21:257][875]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (164)
+[2017.03.22-23.30.21:257][875]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (163)
+[2017.03.22-23.30.21:257][875]LogModuleManager: Shutting down and abandoning module InputBindingEditor (162)
+[2017.03.22-23.30.21:257][875]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (161)
+[2017.03.22-23.30.21:257][875]LogModuleManager: Shutting down and abandoning module SettingsEditor (160)
+[2017.03.22-23.30.21:257][875]LogModuleManager: Shutting down and abandoning module ProjectLauncher (159)
+[2017.03.22-23.30.21:257][875]LogModuleManager: Shutting down and abandoning module SessionFrontend (158)
+[2017.03.22-23.30.21:257][875]LogModuleManager: Shutting down and abandoning module ProfilerClient (157)
+[2017.03.22-23.30.21:257][875]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (156)
+[2017.03.22-23.30.21:257][875]LogModuleManager: Shutting down and abandoning module DeviceManager (155)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module AutomationController (154)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module AutomationWindow (153)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module Layers (152)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (151)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module DetailCustomizations (150)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module PackagesDialog (149)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module Persona (148)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module Kismet (147)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module GraphEditor (146)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module ClassViewer (145)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module Toolbox (144)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module ModuleUI (143)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module MovieSceneTools (142)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module OutputLog (141)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module GammaUI (140)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module Documentation (139)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (138)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module AnalyticsET (137)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module Analytics (136)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module PortalServices (135)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
+[2017.03.22-23.30.21:310][875]LogModuleManager: Shutting down and abandoning module GameplayDebugger (132)
+[2017.03.22-23.30.21:311][875]LogModuleManager: Shutting down and abandoning module AITestSuite (131)
+[2017.03.22-23.30.21:311][875]LogModuleManager: Shutting down and abandoning module AIModule (130)
+[2017.03.22-23.30.21:311][875]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module SlateRemote (127)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module SteamVRController (126)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module SteamVR (125)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (124)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module OculusLibrary (123)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module OculusInput (122)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (121)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module CableComponent (120)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (119)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (118)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module HTML5Networking (117)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module SuperSearch (116)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (115)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2017.03.22-23.30.21:430][875]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2017.03.22-23.30.21:431][875]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2017.03.22-23.30.21:431][875]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2017.03.22-23.30.21:431][875]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2017.03.22-23.30.21:431][875]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2017.03.22-23.30.21:431][875]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2017.03.22-23.30.21:431][875]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2017.03.22-23.30.21:431][875]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2017.03.22-23.30.21:431][875]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (100)
+[2017.03.22-23.30.21:431][875]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2017.03.22-23.30.21:431][875]LogModuleManager: Shutting down and abandoning module MainFrame (98)
+[2017.03.22-23.30.21:431][875]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
+[2017.03.22-23.30.21:431][875]LogModuleManager: Shutting down and abandoning module ContentBrowser (96)
+[2017.03.22-23.30.21:432][875]LogModuleManager: Shutting down and abandoning module Paper2DEditor (95)
+[2017.03.22-23.30.21:432][875]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module Media (90)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module VREditor (84)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module Sequencer (78)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2017.03.22-23.30.21:534][875]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2017.03.22-23.30.21:536][875]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
+[2017.03.22-23.30.21:536][875]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
+[2017.03.22-23.30.21:536][875]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
+[2017.03.22-23.30.21:536][875]LogModuleManager: Shutting down and abandoning module Networking (65)
+[2017.03.22-23.30.21:536][875]LogModuleManager: Shutting down and abandoning module Core (64)
+[2017.03.22-23.30.21:536][875]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
+[2017.03.22-23.30.21:536][875]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
+[2017.03.22-23.30.25:084][875]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2017.03.22-23.30.25:084][875]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2017.03.22-23.30.25:084][875]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2017.03.22-23.30.25:084][875]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2017.03.22-23.30.25:184][875]LogDerivedDataCache: Shutdown
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2017.03.22-23.30.25:184][875]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2017.03.22-23.30.29:196][875]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2017.03.22-23.30.29:196][875]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2017.03.22-23.30.29:196][875]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2017.03.22-23.30.29:196][875]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2017.03.22-23.30.29:197][875]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2017.03.22-23.30.29:197][875]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2017.03.22-23.30.29:197][875]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2017.03.22-23.30.29:199][875]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2017.03.22-23.30.29:199][875]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2017.03.22-23.30.29:199][875]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2017.03.22-23.30.29:199][875]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2017.03.22-23.30.29:199][875]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2017.03.22-23.30.29:199][875]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2017.03.22-23.30.29:199][875]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2017.03.22-23.30.29:199][875]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2017.03.22-23.30.29:199][875]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2017.03.22-23.30.29:199][875]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2017.03.22-23.30.29:201][875]LogExit: Exiting.
+[2017.03.22-23.30.29:202][875]Log file closed, 03/22/17 23:30:29
